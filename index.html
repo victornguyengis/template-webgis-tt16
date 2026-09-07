@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="css/leaflet.css">
         <link rel="stylesheet" href="css/L.Control.Layers.Tree.css">
         <link rel="stylesheet" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/leaflet.photon.css">
         <style>
         html, body, #map {
             width: 100%;
@@ -26,11 +30,16 @@
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
         <script src="js/L.Control.Layers.Tree.min.js"></script>
+        <script src="js/leaflet-svg-shape-markers.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
         <script src="js/leaflet-hash.js"></script>
         <script src="js/Autolinker.min.js"></script>
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
+        <script src="js/leaflet.photon.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
         <script src="data/QuyHoach_PhanVungSanNen_A.js"></script>
         <script src="data/QuyHoach_MangLuoiCapNuoc_L.js"></script>
         <script src="data/QuyHoach_MangLuoiCapThongTin_L.js"></script>
@@ -4359,10 +4368,10 @@
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 0.1,
+                weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(34,173,76,1.0)',
+                fillColor: 'rgba(134,173,122,1.0)',
                 interactive: true,
             }
         }
@@ -5885,7 +5894,7 @@
                case 'Công trình cấp nước khác':
                     return L.marker(latlng, {
                         icon:  L.icon({
-                                iconUrl: 'new_legend/QuyHoachCN_CD_CS_TTLL/QH_CongtrinhcapnuocPCCCdangdiem_Congtrinhcapnuockhac.png', 
+                                iconUrl: 'new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhcapdiendangdiem_Khac.png', 
                                 iconSize: [20, 20],  
                                 iconAnchor: [8, 8], 
                                 popupAnchor: [0, -0] 
@@ -6074,7 +6083,7 @@
                 case 'Khác':
                     return L.marker(latlng, {
                         icon:  L.icon({
-                                iconUrl: 'new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhthongtindangdiem_Khac.png', 
+                                iconUrl: 'new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhcapdiendangdiem_Khac.png', 
                                 iconSize: [20, 20],  
                                 iconAnchor: [8, 8], 
                                 popupAnchor: [0, -0] 
@@ -6636,7 +6645,7 @@
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhthongtindangdiem_Tramthuphatsong.png" width="20" height="20"/></td><td>Trạm thu phát sóng</td></tr>\
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhthongtindangdiem_Tuphoiquang.png" width="20" height="20"/></td><td>Tủ phối quang</td></tr>\
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhthongtindangdiem_Vetinhmatdat.png" width="20" height="20"/></td><td>Vệ tinh mặt đất</td></tr>\
-            <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhthongtindangdiem_Khac.png" width="20" height="20"/></td><td>Khác</td></tr>\
+            <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhcapdiendangdiem_Khac.png" width="20" height="20"/></td><td>Khác</td></tr>\
             </table>',
                 layer: layer_Cngtrnhthngtin_13
             },
@@ -6652,7 +6661,7 @@
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_CongtrinhcapnuocPCCCdangdiem_Nguonnuockhoang.png" width="20" height="20"/></td><td>Nguồn nước khoáng</td></tr>\
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_CongtrinhcapnuocPCCCdangdiem_Nhamaynuoc.png" width="20" height="20"/></td><td>Nhà máy nước</td></tr>\
             <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_CongtrinhcapnuocPCCCdangdiem_Nuocngamlothien.png" width="20" height="20"/></td><td>Nước ngầm lộ thiên</td></tr>\
-            <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_CongtrinhcapnuocPCCCdangdiem_Congtrinhcapnuockhac.png" width="20" height="20"/></td><td>Công trình cấp nước khác</td></tr>\
+            <tr><td style="text-align: center;"><img src="new_legend/QuyHoachCN_CD_CS_TTLL/QH_Congtrinhcapdiendangdiem_Khac.png" width="20" height="20"/></td><td>Công trình cấp nước khác</td></tr>\
             </table>',
                 layer: layer_Cngtrnhcpnc_12
             },
@@ -6718,6 +6727,7 @@
         ]
         },
         ]
+        
 //// Tạo bảng table control
         var lay = L.control.layers.tree(null, overlaysTree,{
             closedSymbol: '🌍',
