@@ -1,0 +1,20 @@
+NON-COMMERCIAL LICENSE
+
+Copyright © 2026 Victor Nguyen. All rights reserved.
+
+TERMS OF USE
+
+The Software may be used, copied, modified, and developed for personal, educational, learning, research, and other non-commercial purposes.
+
+Commercial use, sale, commercial distribution, or incorporation of the Software into any commercial product or service is not permitted without prior written permission from the copyright holder.
+
+For commercial use, please contact Victor Nguyen for review and licensing.
+
+Any copy or modified version of the Software that is distributed must retain the following copyright notice:
+
+Copyright © 2026 Victor Nguyen.
+
+Third-party components included in or used by the Software remain subject to their respective licenses.
+
+
+Copyright © 2026 Victor Nguyen. All rights reserved.
