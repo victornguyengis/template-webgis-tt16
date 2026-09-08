@@ -6,9 +6,11 @@ Copyright © 2026 Victor Nguyen.
 
 webgis-csdlquyhoach-tt16 là dự án WebGIS phục vụ trực quan hóa và khai thác dữ liệu quy hoạch trên nền tảng Web, được xây dựng dựa trên cấu trúc CSDL quy hoạch theo Thông tư 16/2025/TT-BXD.
 
+Lưu ý: CSDL đầu vào cần tuân thủ cấu trúc theo Thông tư 16/2025/TT-BXD và bổ sung các trường dữ liệu theo quy tắc cấu trúc của dự án này để đảm bảo các đối tượng được nhận diện và hiển thị chính xác trên nền tảng Web.
+
 ## Nguồn gốc và ghi nhận
 
-Dự án có sử dụng qgis2web trong quá trình tạo sản phẩm WebGIS ban đầu.
+Dự án này có sử dụng qgis2web trong quá trình tạo sản phẩm WebGIS ban đầu.
 
 qgis2web là một QGIS plugin độc lập, được phát triển bởi cộng đồng qgis2web và phát hành theo GNU General Public License v2.0 (GPL-2.0).
 
