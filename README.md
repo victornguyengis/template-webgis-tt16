@@ -1,6 +1,5 @@
 # template-webgis-tt16
 Cung cấp template cho plugin QGIS (VictorGIS) để tạo WebGIS trực quan hóa CSDL quy hoạch theo Thông tư 16/2025 TT-BXD.
-Copyright © 2026 Victor Nguyen.
 
 ## Giới thiệu
 
