@@ -4,9 +4,13 @@ Copyright © 2026 Victor Nguyen.
 
 ## Giới thiệu
 
-webgis-csdlquyhoach-tt16 là dự án WebGIS phục vụ trực quan hóa và khai thác dữ liệu quy hoạch trên nền tảng Web, được xây dựng dựa trên cấu trúc CSDL quy hoạch theo Thông tư 16/2025/TT-BXD.
+webgis-csdlquyhoach-tt16 là WebGIS template dành cho plugin QGIS VictorGIS, phục vụ trực quan hóa và khai thác dữ liệu quy hoạch trên nền tảng Web.
 
-Lưu ý: CSDL đầu vào cần tuân thủ cấu trúc theo Thông tư 16/2025/TT-BXD và bổ sung các trường dữ liệu theo quy tắc cấu trúc của dự án này để đảm bảo các đối tượng được nhận diện và hiển thị chính xác trên nền tảng Web.
+Template được xây dựng dựa trên cấu trúc CSDL quy hoạch theo Thông tư 16/2025/TT-BXD và có bổ sung một số trường dữ liệu theo quy tắc của dự án để phục vụ việc nhận diện và hiển thị dữ liệu trên WebGIS.
+
+Plugin VictorGIS sử dụng template này để kết hợp với dữ liệu được xuất từ QGIS và tạo ra một thư mục WebGIS hoàn chỉnh. Thư mục này có thể chạy local hoặc triển khai lên các nền tảng hosting/web server để tạo WebGIS public.
+
+Dự án minh họa: https://webgisquyhoach.pages.dev/
 
 ## Nguồn gốc và ghi nhận
 
